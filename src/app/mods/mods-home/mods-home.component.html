@@ -1,0 +1,9 @@
+<app-divider>Modal</app-divider>
+<app-modal *ngIf="showModal" (close)="toggleModal()">
+  <div modalTitle class="header">Nice</div>
+  <p>I am a reusable component!</p>
+  <div modalFooter>
+    <div class="ui black deny button" (click)="toggleModal()">Good!</div>
+  </div>
+</app-modal>
+<button class="ui primary basic button" (click)="toggleModal()">Modal</button>
